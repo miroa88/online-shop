@@ -3,7 +3,8 @@ import {
     getAuth,
     signInWithRedirect,
     signInWithPopup,
-    GoogleAuthProvider
+    GoogleAuthProvider,
+    createUserWithEmailAndPassword
 } from 'firebase/auth'
 
 import {
@@ -36,7 +37,9 @@ export const signInWithGoogleRedirect = () => signInWithRedirect(auth, googlePro
 
 export const db = getFirestore();
 
-export const createUserDocumentFromAuth = async (userAuth) => {
+export const createUserDocumentFromAuth = async (userAuth, additionalInformation={}) => {
+    if (!userAuth) return;
+
     const userDocRef = doc(db, 'users', userAuth.uid);
     const userSnapshot = await getDoc(userDocRef);
     // if user snapshot does not exist
@@ -47,7 +50,8 @@ export const createUserDocumentFromAuth = async (userAuth) => {
             await setDoc(userDocRef, { 
                 displayName,
                 email,
-                createdAt    
+                createdAt    ,
+                ...additionalInformation
             });
         } catch (error) {
             console.log('error creating user', error.message);
@@ -56,3 +60,11 @@ export const createUserDocumentFromAuth = async (userAuth) => {
     // if exist just return userDocRef
     return userDocRef;
 };
+
+export const createAuthUserWithEmailAndPassword = async (email , password) => {
+    // return if do not receive email or password,  to protect app from calling 
+    //createUserWithEmailAndPassword method. later this will be improved by using typeScript
+    if(!email || !password) return;
+
+    return await createUserWithEmailAndPassword(auth, email, password);
+}
