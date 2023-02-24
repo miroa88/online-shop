@@ -1,7 +1,7 @@
 import React from 'react';
 import CategoryItem from '../category-item/category-item.component';
 
-import '../directory/directory.style.scss'
+import '../directory/directory.style.scss';
 
 const categories = [
     {
