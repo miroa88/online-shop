@@ -17,7 +17,7 @@ export const UserProvider = ({ children }) => {
     useEffect(() => {
         const unsubscribe = onAuthStateChangedListener((user) => {
             if(user) {
-                // we handle the case when user already exists to just return the reference
+                // we should handle the case when user already exists to just return the reference
                  createUserDocumentFromAuth(user);
             }
             setCurrentUser(user);

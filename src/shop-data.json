@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Canyon LE Loaded Fly Reel",
+    "imageUrl": "https://assets.basspro.com/image/list/fn_select:jq:first(.%5B%5D%7Cselect(.public_id%20%7C%20endswith(%22main%22)))/3488866.json?$Prod_PLPThumb$",
+    "price": 34
+  },
+  {
+    "id": 2,
+    "name": "Orvis Clearwater Fly Reel",
+    "imageUrl": "https://assets.basspro.com/image/list/fn_select:jq:first(.%5B%5D%7Cselect(.public_id%20%7C%20endswith(%22main%22)))/2648429.json?$Prod_PLPThumb$",
+    "price": 98
+  },
+  {
+    "id": 3,
+    "name": "Cabela's Prestige II Loaded Fly Reel",
+    "imageUrl": "https://assets.basspro.com/image/list/fn_select:jq:first(.%5B%5D%7Cselect(.public_id%20%7C%20endswith(%22main%22)))/2898650.json?$Prod_PLPThumb$",
+    "price": 69
+  },
+  {
+    "id": 4,
+    "name": "Cabela's RLS II Fly Reel",
+    "imageUrl": "https://assets.basspro.com/image/list/fn_select:jq:first(.%5B%5D%7Cselect(.public_id%20%7C%20endswith(%22main%22)))/2900156.json?$Prod_PLPThumb$",
+    "price": 25
+  },
+  {
+    "id": 5,
+    "name": "White River Fly Shop Classic Fly Reel",
+    "imageUrl": "https://assets.basspro.com/image/list/fn_select:jq:first(.%5B%5D%7Cselect(.public_id%20%7C%20endswith(%22main%22)))/2645719.json?$Prod_PLPThumb$",
+    "price": 99
+  },
+  {
+    "id": 6,
+    "name": "Waterworks Lamson Liquid Fly Reel",
+    "imageUrl": "https://assets.basspro.com/image/list/fn_select:jq:first(.%5B%5D%7Cselect(.public_id%20%7C%20endswith(%22main%22)))/3281098.json?$Prod_PLPThumb$",
+    "price": 139
+  },
+  {
+    "id": 7,
+    "name": "Cabela's Prestige II Fly Reel",
+    "imageUrl": "https://assets.basspro.com/image/list/fn_select:jq:first(.%5B%5D%7Cselect(.public_id%20%7C%20endswith(%22main%22)))/2898645.json?$Prod_PLPThumb$",
+    "price": 59
+  },
+  {
+    "id": 8,
+    "name": "White River Fly Shop Dogwood",
+    "imageUrl": "https://assets.basspro.com/image/list/fn_select:jq:first(.%5B%5D%7Cselect(.public_id%20%7C%20endswith(%22main%22)))/2889682.json?$Prod_PLPThumb$",
+    "price": 49
+  },
+  {
+    "id": 9,
+    "name": "Redington Behemoth Fly Reel",
+    "imageUrl": "https://assets.basspro.com/image/list/fn_select:jq:first(.%5B%5D%7Cselect(.public_id%20%7C%20endswith(%22main%22)))/2233546.json?$Prod_PLPThumb$",
+    "price": 129
+  }
+]
