@@ -52,5 +52,11 @@
     "name": "Redington Behemoth Fly Reel",
     "imageUrl": "https://assets.basspro.com/image/list/fn_select:jq:first(.%5B%5D%7Cselect(.public_id%20%7C%20endswith(%22main%22)))/2233546.json?$Prod_PLPThumb$",
     "price": 129
+  },
+  {
+    "id": 10,
+    "name": "Redington Behemoth Fly Reel",
+    "imageUrl": "https://assets.orvis.com/is/image/orvisprd/72H910_W?wid=365&src=is($object$:1-1)",
+    "price": 129
   }
 ]
