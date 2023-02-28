@@ -14,7 +14,6 @@ import { NavigationContainer,LogoContainer, NavLinkContainer, NavLinksContainer}
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
   const { isCartOpen } = useContext(CartContext);
-  console.log("isCartOpen",isCartOpen)
     return(
       <Fragment>
         <NavigationContainer>
