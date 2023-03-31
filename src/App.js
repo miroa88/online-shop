@@ -25,7 +25,7 @@ const App = () => {
             // we should handle the case when user already exists to just return the reference
              createUserDocumentFromAuth(user);
         }
-        // console.log("just user", user)
+
         dispatch(setCurrentUser(user));
     });
     return unsubscribe;
