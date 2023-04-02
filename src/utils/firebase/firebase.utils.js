@@ -57,6 +57,8 @@ export const addCollectionAndDocuments = async (collectionKey, objectsToAdd, fie
 export const getCategoriesAndDocuments = async () => {
     const collectionRef = collection(db, 'categories');
     const qry = query(collectionRef);
+
+    // await Promise.reject(new Error('Something Went Wrong!')) // to check the error action
     const querySnapshot = await getDocs(qry);
     return querySnapshot.docs.map(docSnapShot => docSnapShot.data())
     
